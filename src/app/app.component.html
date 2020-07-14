@@ -1,0 +1,56 @@
+<h1>Integrate Angular with Flask Python</h1>
+<hr>
+
+<!-- <button (click)="readData()">Click here to fetch data from Flask</button>
+<hr> -->
+
+<table id="weather">
+    <tr>
+        <th *ngFor="let column of headers">
+            {{column}}
+        </th>
+    </tr>
+
+    <tr *ngFor="let row of weather">
+        <td *ngFor="let col of headers">
+            {{row[col]}}
+        </td>
+    </tr>
+
+</table>
+
+<table id="results">
+    <tr>
+        <th *ngFor="let column of headers1">
+            {{column}}
+        </th>
+    </tr>
+
+    <tr *ngFor="let row of results">
+        <td *ngFor="let col of headers1">
+            {{row[col]}}
+        </td>
+    </tr>
+
+</table>
+
+
+<h1>Machine Learning Output: {{data}}</h1>
+<div class=a>
+    <mat-toolbar>
+        <span class="filler" style="font-size:130%">ML Prediction Tool  </span>
+
+        <mat-toolbar><span class="gap"></span>
+            <span class="gap">File</span>
+            <span class="gap">Edit</span>
+            <span class="gap">About</span> <br>
+            <span class="filler1"></span>
+            <button style=" font-size : 16px; width: 6%; height: 40px; " mat-raised-button routerLink='/Main'>Main</button>
+        </mat-toolbar>
+    </mat-toolbar>
+
+    <div>
+        <img src="https://images.pexels.com/photos/1092424/pexels-photo-1092424.jpeg?cs=srgb&dl=code-computer-machine-learning-programmer-1092424.jpg&fm=jpg" alt="business intelligence" width="1345" height="700">
+    </div>
+</div>
+<router-outlet></router-outlet>
